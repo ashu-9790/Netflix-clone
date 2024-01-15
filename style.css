@@ -1,0 +1,340 @@
+@import url('netflix-fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Netflix Sans400';
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(./Assets/Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    width:100%;
+    position: relative;
+    top:0;
+    left:0;
+}
+.maininner{
+    background-color: black;
+    color:white;
+    width:100%;
+    height:100vh;
+    opacity:0.6;
+    position:absolute;
+    top:0;
+    left:0;
+}
+h2{
+    font-family: 'Netflix Sans900';
+    font-size: 48px;
+}
+p{
+    font-size: 28px;
+}
+.nav{
+    width:80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:auto;
+    
+}
+.nav img{
+    z-index: 10;
+    width: 135px;
+    height: 60px;
+}
+.navbuttons{
+    z-index:10;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.langbtn{
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 0px solid rgba(246, 238, 238, 0.5);
+    color:white;
+    font-family:'Netflix Sans400';
+    font-weight: 500;
+    padding: 5px 0px 5px 21px;
+    font-size: 0.8rem;
+}
+.symbol {
+    display:flex;
+    border: 1.2px solid rgba(246, 238, 238, 0.5);
+    /* padding:3px; */
+    border-radius: 6px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    align-items: center;
+}
+.symbol img{
+    filter: invert(1);
+    width:23px;
+    height:15px;
+    position:absolute;
+}
+.symbol select{
+    display:flex;
+}
+.btnsignin{
+    padding: 5px 8px 5px 8px;
+    font-family:'Netflix Sans400';
+    font-size: 0.8rem;
+    font-weight:600;
+    
+}
+.hero{
+    color:white;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap:30px;
+    height:calc(100% - 62px)
+    
+}
+.herodiv{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    padding: 11px 53px 11px 4px;
+    border-radius: 4px;
+    color: white;
+    width: 280px;
+    height: 30px;
+    font-size: 1rem;
+}
+.btn{
+    background-color: #fc0202;
+    border-radius: 4px;
+    border: 1px solid #897f7f;
+    color: white;
+    font-family: 'Netflix Sans400';
+}
+#herobtn{
+    padding: 11px;
+    font-size: 1.5rem;
+    font-family: 'Netflix Sans700';
+}
+/* SEPERATOR */
+.seperator{
+    background-color: rgba(35, 35, 35, 1);
+    height:10px;
+}
+
+/* SECTIONS */
+.sec{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    top:6px;
+    position:relative;
+    max-height: 100vh;
+    width:80%;
+    margin:auto;
+    padding:30px 0px;
+}
+.seccontent{
+    display:flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+.secimgvid{
+    position:relative;
+}
+.secimgvid img{
+    width:500px;
+    height:400px;
+}
+.secimgvid video{
+    position: absolute;
+    top: 83px;
+    right: 47px;
+    z-index: -4;
+    width: 387px;
+}
+.faq{
+    color:white;
+    text-align: center;
+    max-height:150vh;
+}
+.faq h2{
+    font-size: 44px;
+    margin-top: 10px;
+}
+.faqbox{
+    width:65%;
+    margin:15px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+}
+.faqbox span{
+    background-color: rgba(45, 45, 45, 1);
+    font-size: 25px;
+    display:flex;
+    justify-content: space-between;
+    padding:16px;
+}
+.faqbox span img{
+    width:23px;
+    height:23px;
+    filter: invert(1);
+}
+.faq .herodiv{
+    flex-wrap: wrap;
+    width:60%;
+    margin:38px auto;
+}
+
+/* FOOTER  */
+footer{
+    padding:20px;
+    font-size:28px;
+    color: whitesmoke;
+    max-height: 100vh;
+    font-family: 'Netflix Sans400';
+}
+footer a{
+    color: whitesmoke;
+    font-size: 17px;
+}
+footer p{
+    width:80%;
+    margin:15px auto;
+    font-size: 17px;
+}
+.footerlinks{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width:80%;
+    margin:10px auto;
+}
+footer :nth-child(3){
+    width:80%;
+    margin:auto;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:960px){
+    .main{
+        max-height: 75vh;
+    }
+    .maininner{
+        max-height: 75vh;
+    }
+    .hero div{
+        flex-wrap: wrap;
+    }
+    .hero h2{
+        font-size:40px;
+    }
+    .sec{
+        flex-wrap: wrap;
+        max-height: 100vh;
+        text-align: center;
+    }
+    .a{
+        order:2;
+    }
+    .b{
+        order:1;
+    }
+    .footerlinks{
+        grid-template-columns: 1fr 1fr;
+    }
+    footer a{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:460px){
+    .hero h2{
+        font-size:30px;
+    }
+    .langbtn{
+        font-size: 0.8rem;
+    }
+    .symbol img{
+        width: 15px !important;
+        height: 20px !important;
+        margin-left: 5px;
+    }
+    .btnsignin{
+        font-size: 0.8rem;
+    }
+    .nav img{
+        width: 84px;
+        height: 60px;
+    }
+    .nav{
+        padding: 10px;
+        width: 86vw;
+    }
+    .hero div{
+        flex-direction: column;
+        gap: 19px;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+    .secimgvid img{
+        width: 374px;
+        height: 325px;
+    }
+    .secimgvid video{
+        top: 71px;
+        right: 24px;
+        width: 300px;
+    }
+    .sec h2{
+        font-size: 31px;
+    }
+    .sec p{
+        font-size: 16px;
+    }
+    .faq h2 {
+        font-size: 35px;
+    }
+    .faq p{
+        font-size: 16px;
+    }
+    .faqbox span img {
+        width: 16px;
+    }
+    .faqbox span {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:340px){
+    .hero input{
+        width:70vw;
+        padding: 11px 53px 11px 4px;
+    }
+}
