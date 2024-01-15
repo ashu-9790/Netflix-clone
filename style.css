@@ -270,7 +270,7 @@ footer :nth-child(3){
 }
 @media screen and (max-width:460px){
     .hero h2{
-        font-size:30px;
+        font-size:34px;
     }
     .langbtn{
         font-size: 0.8rem;
