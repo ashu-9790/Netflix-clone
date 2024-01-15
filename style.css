@@ -248,7 +248,7 @@ footer :nth-child(3){
         flex-wrap: wrap;
     }
     .hero h2{
-        font-size:40px;
+        font-size:43px;
     }
     .sec{
         flex-wrap: wrap;
@@ -332,9 +332,4 @@ footer :nth-child(3){
         grid-template-columns: 1fr 1fr;
     }
 }
-@media screen and (max-width:340px){
-    .hero input{
-        width:70vw;
-        padding: 11px 53px 11px 4px;
-    }
-}
+
